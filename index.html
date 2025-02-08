@@ -63,6 +63,49 @@
             font-weight: bold;
             color: #4c4c6c;
         }
+
+        /* Color Assignments for Subjects */
+        .FAFL { background-color: #d1f7e3; }   /* Light Green */
+        .WebProgramming { background-color: #fce5cd; }  /* Light Yellow */
+        .TeaBreak { background-color: #f9dada; }  /* Light Red */
+        .DAA { background-color: #d9e6f2; }  /* Light Blue */
+        .LunchBreak { background-color: #f7f7f7; }  /* Light Grey */
+        .MPMC { background-color: #f1e1d3; }  /* Light Beige */
+        .UH { background-color: #cce7f5; }  /* Light Sky Blue */
+        .MATH { background-color: #f5d3f2; }  /* Light Purple */
+        .NSS { background-color: #f0e5d8; }  /* Light Peach */
+        .SPORTS { background-color: #e2f7cc; }  /* Light Mint Green */
+        .Yoga { background-color: #e0f5d9; }  /* Light Green */
+        .Arduino { background-color: #d6e5f5; }  /* Light Blue */
+        .WAGA { background-color: #e0c9f5; }  /* Light Lavender */
+        .HSCECG { background-color: #f8e1e1; }  /* Light Coral */
+        .Hobby { background-color: #d6e8c2; }  /* Light Lime */
+
+        /* Color Legend */
+        .legend {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+
+        .legend div {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .legend div span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .legend div p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -85,58 +128,58 @@
         <tbody>
             <tr>
                 <th scope="row">Monday</th>
-                <td>FAFL</td>
-                <td>Web Programming</td>
-                <td>Tea Break</td>
-                <td>FAFL</td>
-                <td>DAA</td>
-                <td>Lunch Break</td>
-                <td colspan="2">(B1)DAA & (B2)MPMC</td>
-                <td>MOOC</td>
+                <td class="FAFL">FAFL</td>
+                <td class="WebProgramming">Web Programming</td>
+                <td class="TeaBreak">Tea Break</td>
+                <td class="FAFL">FAFL</td>
+                <td class="DAA">DAA</td>
+                <td class="LunchBreak">Lunch Break</td>
+                <td colspan="2" class="DAA MPMC">(B1)DAA & (B2)MPMC</td>
+                <td class="MOOC">MOOC</td>
             </tr>
             <tr>
                 <th scope="row">Tuesday</th>
-                <td>FAFL</td>
-                <td>MPMC</td>
-                <td>Tea Break</td>
-                <td>UH</td>
-                <td>DAA</td>
-                <td>Lunch Break</td>
-                <td>MATH</td>
-                <td colspan="2">NSS, SPORTS & Yoga</td>
+                <td class="FAFL">FAFL</td>
+                <td class="MPMC">MPMC</td>
+                <td class="TeaBreak">Tea Break</td>
+                <td class="UH">UH</td>
+                <td class="DAA">DAA</td>
+                <td class="LunchBreak">Lunch Break</td>
+                <td class="MATH">MATH</td>
+                <td colspan="2" class="NSS SPORTS Yoga">NSS, SPORTS & Yoga</td>
             </tr>
             <tr>
                 <th scope="row">Wednesday</th>
-                <td>MPMC</td>
-                <td>Web Programming</td>
-                <td>Tea Break</td>
-                <td colspan="2">(B1)Arduino & (B2)Web Programming</td>
-                <td>Lunch Break</td>
-                <td>DAA</td>
-                <td>UH</td>
-                <td>WAGA</td>
+                <td class="MPMC">MPMC</td>
+                <td class="WebProgramming">Web Programming</td>
+                <td class="TeaBreak">Tea Break</td>
+                <td colspan="2" class="Arduino WebProgramming">(B1)Arduino & (B2)Web Programming</td>
+                <td class="LunchBreak">Lunch Break</td>
+                <td class="DAA">DAA</td>
+                <td class="UH">UH</td>
+                <td class="WAGA">WAGA</td>
             </tr>
             <tr>
                 <th scope="row">Thursday</th>
-                <td colspan="2">(B1)MPMC & (B2)DAA</td>
-                <td>Tea Break</td>
-                <td>MATH</td>
-                <td>HV</td>
-                <td>Lunch Break</td>
-                <td>MPMC</td>
-                <td>FAFL</td>
-                <td>HS/CE/CG</td>
+                <td colspan="2" class="MPMC DAA">(B1)MPMC & (B2)DAA</td>
+                <td class="TeaBreak">Tea Break</td>
+                <td class="MATH">MATH</td>
+                <td class="HV">HV</td>
+                <td class="LunchBreak">Lunch Break</td>
+                <td class="MPMC">MPMC</td>
+                <td class="FAFL">FAFL</td>
+                <td class="HSCECG">HS/CE/CG</td>
             </tr>
             <tr>
                 <th scope="row">Friday</th>
-                <td>MATH</td>
-                <td>MPMC</td>
-                <td>Tea Break</td>
-                <td colspan="2">(B1)Web Programming & (B2)Arduino</td>
-                <td>Lunch Break</td>
-                <td>DAA</td>
-                <td>MATH</td>
-                <td>Hobby</td>
+                <td class="MATH">MATH</td>
+                <td class="MPMC">MPMC</td>
+                <td class="TeaBreak">Tea Break</td>
+                <td colspan="2" class="WebProgramming Arduino">(B1)Web Programming & (B2)Arduino</td>
+                <td class="LunchBreak">Lunch Break</td>
+                <td class="DAA">DAA</td>
+                <td class="MATH">MATH</td>
+                <td class="Hobby">Hobby</td>
             </tr>
             <tr>
                 <th scope="row">Saturday</th>
@@ -144,5 +187,24 @@
             </tr>
         </tbody>
     </table>
+
+    <!-- Color Legend Section -->
+    <div class="legend">
+        <div><span style="background-color: #d1f7e3;"></span><p>FAFL: Light Green</p></div>
+        <div><span style="background-color: #fce5cd;"></span><p>Web Programming: Light Yellow</p></div>
+        <div><span style="background-color: #f9dada;"></span><p>Tea Break: Light Red</p></div>
+        <div><span style="background-color: #d9e6f2;"></span><p>DAA: Light Blue</p></div>
+        <div><span style="background-color: #f7f7f7;"></span><p>Lunch Break: Light Grey</p></div>
+        <div><span style="background-color: #f1e1d3;"></span><p>MPMC: Light Beige</p></div>
+        <div><span style="background-color: #cce7f5;"></span><p>UH: Light Sky Blue</p></div>
+        <div><span style="background-color: #f5d3f2;"></span><p>MATH: Light Purple</p></div>
+        <div><span style="background-color: #f0e5d8;"></span><p>NSS: Light Peach</p></div>
+        <div><span style="background-color: #e2f7cc;"></span><p>SPORTS: Light Mint Green</p></div>
+        <div><span style="background-color: #e0f5d9;"></span><p>Yoga: Light Green</p></div>
+        <div><span style="background-color: #d6e5f5;"></span><p>Arduino: Light Blue</p></div>
+        <div><span style="background-color: #e0c9f5;"></span><p>WAGA: Light Lavender</p></div>
+        <div><span style="background-color: #f8e1e1;"></span><p>HS/CE/CG: Light Coral</p></div>
+        <div><span style="background-color: #d6e8c2;"></span><p>Hobby: Light Lime</p></div>
+    </div>
 </body>
 </html>
