@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7fb;
+            margin: 0;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        caption {
+            font-size: 28px;
+            font-weight: bold;
+            color: #4c4c6c;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+
+        th {
+            background-color: #80d0c7;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #ffffff;
+        }
+
+        tr:hover td {
+            background-color: #e8f1f1;
+        }
+
+        td[colspan="2"] {
+            background-color: #f3e1b4;
+        }
+
+        td[scope="row"] {
+            background-color: #f4f4f4;
+            font-weight: bold;
+            color: #4c4c6c;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>College Timetable</caption>
+        <thead>
+            <tr>
+                <th>DAY</th>
+                <th scope="col"><time datetime="08:30">8:30am</time>-<time datetime="9:25">9:25am</time></th>
+                <th scope="col"><time datetime="9:25">9:25am</time>-<time datetime="10:20">10:20am</time></th>
+                <th scope="col"><time datetime="10:20">10:20am</time>-<time datetime="10:40">10:40am</time></th>
+                <th scope="col"><time datetime="10:40">10:40am</time>-<time datetime="11:35">11:35am</time></th>
+                <th scope="col"><time datetime="11:35">11:35am</time>-<time datetime="12:30">12:30pm</time></th>
+                <th scope="col"><time datetime="12:30">12:30pm</time>-<time datetime="01:10">1:10pm</time></th>
+                <th scope="col"><time datetime="1:10">1:10pm</time>-<time datetime="02:50">2:05pm</time></th>
+                <th scope="col"><time datetime="02:50">2:50pm</time>-<time datetime="3:00">3:00pm</time></th>
+                <th scope="col"><time datetime="03:00">3:00pm</time>-<time datetime="3:55">3:55pm</time></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Monday</th>
+                <td>FAFL</td>
+                <td>Web Programming</td>
+                <td>Break</td>
+                <td>FAFL</td>
+                <td>DAA</td>
+                <td>Lunch Break</td>
+                <td colspan="2">(B1)DAA & (B2)MPMC</td>
+                <td>MOOC</td>
+            </tr>
+            <tr>
+                <th scope="row">Tuesday</th>
+                <td>FAFL</td>
+                <td>MPMC</td>
+                <td>Break</td>
+                <td>UH</td>
+                <td>DAA</td>
+                <td>Lunch Break</td>
+                <td>MATH</td>
+                <td colspan="2">NSS, SPORTS & Yoga</td>
+            </tr>
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td>MPMC</td>
+                <td>Web Programming</td>
+                <td>Break</td>
+                <td colspan="2">(B1)Arduino & (B2)Web Programming</td>
+                <td>Lunch Break</td>
+                <td>DAA</td>
+                <td>UH</td>
+                <td>WAGA</td>
+            </tr>
+            <tr>
+                <th scope="row">Thursday</th>
+                <td colspan="2">(B1)MPMC & (B2)DAA</td>
+                <td>Break</td>
+                <td>MATH</td>
+                <td>HV</td>
+                <td>Lunch Break</td>
+                <td>MPMC</td>
+                <td>FAFL</td>
+                <td>HS/CE/CG</td>
+            </tr>
+            <tr>
+                <th scope="row">Friday</th>
+                <td>MATH</td>
+                <td>MPMC</td>
+                <td>Break</td>
+                <td colspan="2">(B1)Web Programming & (B2)Arduino</td>
+                <td>Lunch Break</td>
+                <td>DAA</td>
+                <td>MATH</td>
+                <td>Hobby</td>
+            </tr>
+            <tr>
+                <th scope="row">Saturday</th>
+                <td colspan="9">AS PER CALENDAR OF EVENTS</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
